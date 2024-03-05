@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Encrypt and Decrypt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h3>Text Encrypt and Decrypt</h3>
+        <span class="link">
+            <button id="encrypt">Encryption</button>
+            <button id="decrypt">Decryption</button>
+        </span>
+    </nav>
+</header>
+
+<main>
+    <h2 id="p">Text Encryption</h2>
+    <div id="" style="">
+        <form id="enc" method="post">
+            <div class="form">
+                <div>
+                    <label for="plain">Plain text</label>
+                    <input id="plain" type="text" name="plain" placeholder="Plain Text"/>
+                </div>
+
+                <div class="key">
+                    <label  for="key">Key</label>
+                    <input id="key" type="number" pattern="0-9" name="key" placeholder="Key">
+                </div>
+            </div>
+
+            <button>ENCRYPT</button>
+        </form>
+
+        <form id="dec" method="post" style="display:none">
+            <div class="form">
+                <div>
+                    <label for="plain">Cipher</label>
+                    <input id="cipher" type="text" name="cipher" placeholder="Cipher"/>
+                </div>
+
+                <div class="key">
+                    <label  for="key">Key</label>
+                    <input id="dkey" type="number" pattern="0-9" name="key" placeholder="Key">
+                </div>
+            </div>
+
+            <button>DECRYPT</button>
+        </form>
+    </div>
+
+    <div id="success" class="success">
+    </div>
+
+    <div id="error" class="error">
+    </div>
+</main>
+
+<footer>
+    <small>2024 Text Encryption and Decryption - Shuraih Usman</small>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
